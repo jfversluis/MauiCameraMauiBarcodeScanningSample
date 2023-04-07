@@ -16,6 +16,7 @@
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.mauicameramauibarcodesample</ApplicationId>
+		<ApplicationIdGuid>{5098BD17-BC25-4181-9167-083F17CC2DAC}</ApplicationIdGuid>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -48,6 +49,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Camera.MAUI" Version="1.2.1" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
