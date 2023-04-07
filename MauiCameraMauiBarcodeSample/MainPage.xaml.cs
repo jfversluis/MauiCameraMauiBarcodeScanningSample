@@ -21,5 +21,13 @@ namespace MauiCameraMauiBarcodeSample
                 });
             }
         }
+
+        private void cameraView_BarcodeDetected(object sender, Camera.MAUI.ZXingHelper.BarcodeEventArgs args)
+        {
+            MainThread.BeginInvokeOnMainThread(() =>
+            {
+                barcodeResult.Text = $"{args.Result[0].BarcodeFormat}: {args.Result[0].Text}";
+            });
+        }
     }
 }

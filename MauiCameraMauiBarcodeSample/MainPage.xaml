@@ -10,7 +10,8 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-            <cv:CameraView x:Name="cameraView" WidthRequest="300" HeightRequest="200" CamerasLoaded="cameraView_CamerasLoaded"
+            <Label x:Name="barcodeResult" FontSize="20"/>
+            <cv:CameraView x:Name="cameraView" WidthRequest="300" HeightRequest="200" CamerasLoaded="cameraView_CamerasLoaded" BarCodeDetectionEnabled="True"
                            BarcodeDetected="cameraView_BarcodeDetected"/>
 
         </VerticalStackLayout>
